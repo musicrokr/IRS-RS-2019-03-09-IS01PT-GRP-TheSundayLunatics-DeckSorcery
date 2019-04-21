@@ -2,7 +2,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Deck Sorcery: Hearthstone Deck Building using Hybrid Reasoning System
 
-<img src="SystemCode/clips/static/hdb-bto.png"
+<img src="Miscellaneous/Deck Sorcery.png"
      style="float: left; margin-right: 0px;" />
 
 ---
@@ -31,10 +31,8 @@ Our team had an amazing time working on this project, and hope to share our insi
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![Sudoku AI Solver](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Sudoku AI Solver")
-
-Note: It is not mandatory for every project member to appear in video presentation; Presentation by one project member is acceptable. 
-More reference video presentations [here](https://telescopeuser.wordpress.com/2018/03/31/master-of-technology-solution-know-how-video-index-2/ "video presentations")
+<a href="https://youtu.be/Vxq8k3xzHlw"><img src="Miscellaneous/YTDeck Sorcery.png"
+     style="float: left; margin-right: 0px;" /></a>
 
 ---
 ## SECTION 5 : USER GUIDE
@@ -60,39 +58,41 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 > **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
 
 ### [ 2 ] To run the system in other/local machine:
-### Install additional necessary libraries. This application works in python 2 only.
+### Install additional necessary libraries. This application works in Python 3 only.
 
-> $ sudo apt-get install python-clips clips build-essential libssl-dev libffi-dev python-dev python-pip
+> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
 
-> $ pip install pyclips flask flask-socketio eventlet simplejson pandas
+> $ cd folder_location/
+
+> $ py -m venv env
+
+> $ env\Scripts\activate
+
+> $ pip install flask
+
+> $ set FLASK_APP=main.py
+
+> $ pip install sklearn
+
+> $ pip install deap
+
+> $ flask run
+
+> **Go to URL listed in Command Prompt using web browser** http://127.0.0.1:5000
+
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
 `<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/ProjectReport/Project%20Report%20HDB-BTO.pdf>
 
-**Recommended Sections for Project Report / Paper:**
-- Executive Summary / Paper Abstract
-- Sponsor Company Introduction (if applicable)
-- Business Problem Background
-- Project Objectives & Success Measurements
-- Project Solution (To detail domain modelling & system design.)
-- Project Implementation (To detail system development & testing approach.)
-- Project Performance & Validation (To prove project objectives are met.)
-- Project Conclusions: Findings & Recommendation
-- List of Abbreviations (if applicable)
-- References (if applicable)
-
 ---
 ## SECTION 7 : MISCELLANEOUS
 
-### HDB_BTO_SURVEY.xlsx
-* Results of survey
-* Insights derived, which were subsequently used in our system
+N.A.
+
 
 ---
-
-### <<<<<<<<<<<<<<<<<<<< End of Template >>>>>>>>>>>>>>>>>>>>
 
 ---
 
