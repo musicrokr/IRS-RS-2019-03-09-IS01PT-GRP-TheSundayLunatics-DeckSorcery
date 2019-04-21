@@ -1,29 +1,29 @@
 
 ## SECTION 1 : PROJECT TITLE
-## Deck Sorcery: Hearthstone Deck Building using Hybrid Reasoning System
+## Deck Sorcery: Hearthstone Deck Building
 
 <img src="Miscellaneous/Deck Sorcery.png"
      style="float: left; margin-right: 0px;" />
 
 ---
-## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
-Singapore ranks amongst countries with the highest population density in the world. In a bid to have firm control over long term urban planning, the Singapore government came up with the “Built to Order” (abbreviated BTO) initiative back in 2001. These are new Housing Development Board (HDB) flats tightly controlled by their eligibility and quantity released every year. In more recent years, the modern BTO scheme in Singapore requires a waiting period of 3-4 years, and is generally targeted at young Singaporean couples looking to purchase their first property and set up a family. Nationality and income ceilings are some of the broad filters that determine one’s eligibility for the highly sought after projects. 
+## SECTION 2 : EXECUTIVE SUMMARY
 
+Computer gaming is a billion dollar industry, characterized by video and mobile games which provide endless hours of entertainment to gamers. Nonlinear gamplays presents players with challenges that can be completed in a number of different sequences and could result in a variety of outcomes. Increasingly, game developers are leveraging on  machine learning methods, such as supervised learning like support vector machines or neural networks to build the models of player experience to enhance gameplay. 
 
-Our team, comprising of 6 young Singaporeans, all hope to be property owners one day. Many of our peers opt for BTO flats due to their affordability, existence of financial aid from the government, as well as their resale value. However, there often exists a knowledge gap for these young couples during the decision making process and they end up making potentially regretful decisions. We would like to bridge this knowledge gap, and have hence chosen to base our project on creating a recommender system for BTO flats, utilizing the data from recent launches in Tampines, Eunos, Sengkang and Punggol. 
+Hearthstone, a online collectible card game (CCG) is a turn-based 1-vs-1 strategy game  set in the Warcraft universe. In CCGs every  player is asked to construct a specific deck of 30 cards before the actual match. With 9 different hero classes and over 2,000 possible cards to choose from, this is no doubt a daunting task. Each card include specific rules that affect the interaction between players, promoting a varied and dynamic game play. Players need to deal with hidden information and randomness, with the combination of states, rules and cards that may result in complex or unpredicted reactions, such as combos, combination of card. Hearthstone is a game where actions may have non-deterministic results, and the challenge for each user to maximize the possibility of winning using their constructed deck.
 
+TSL has developed, Deck Sorcery which focuses on the automated deck construction and deck win rate optimization using information from historical dataset of decks.  The actual gameplay mechanisms are not covered in this project but they can be considered in future enhancement of the intelligent system. Deck Sorcery is based on a Hybrid Reasoning System: Co-operating Experts architecture, considering the complex nature of deck construction and requirements for various techniques. Deck Sorcery leverages on a combination of machine reasoning techniques such as deductive and inductive reasoning, as well as planning & optimization in Synthetic Problem Solving.
 
-Using the techniques imparted to us in lectures, our group first set out to build a sizeable knowledge base via conducting an interview and administering a survey. While building the system, we utilized tools such as Java to scrape real time data from HDB website and transform it into a database, CLIPS to synthesize the rule based reasoning process, and Python to integrate it into an easy to use UI for the everyday user. To add icing on the cake, we even hosted the system on a website so that the everyday user can access it through the click of a link.
+The lack of any universal benchmarking methods for win rate prediction made assess the strength of the deck other than by human observation. Also, a multitude of factors such as the player’s intrinsic ability or the number of actions in the game are not considered in our analysis. 
 
-
-Our team had an amazing time working on this project, and hope to share our insights with everyone. Despite a focus on BTO flats, we would recommend it for everybody interested in understanding property market trends for residence or investment purposes. There truly are a wide array of factors behind the decision to invest in a property, and we only wish there was more time to work on the scope and scale of the project. 
+The technologies used in our POC solution are a combination of Flask, Python and external Python libraries such as Scikit Learn, DEAP and Apyori.
 
 ---
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 | Official Full Name  | Student ID  | Work Items | 
 | :------------ |:---------------:| :-----| 
-| Tan Jun Khiang | A0195169N | Project Report, Knowledge Discovery| 
+| Tan Jun Khiang | A0195169N | Project Report, Knowledge Discovery, Video| 
 | Tan Wei Lian | A0048135J | Python Application - Genetic Algorithmn & Knowledge Discovery|
 | Tang Meng | A0137099U | Flask Web Application |
 | Leong Jun Hun, Darryl | A0195318X | Project Report, Knowledge Discovery| 
@@ -37,7 +37,7 @@ Our team had an amazing time working on this project, and hope to share our insi
 ---
 ## SECTION 5 : USER GUIDE
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/UserGuide/User%20Guide%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/musicrokr/IRS-RS-2019-03-09-IS01PT-GRP-TheSundayLunatics-DeckSorcery/blob/master/UserGuide/Deck%20Sorcery%20User%20Guide.pdf>
 
 ### [ 1 ] To run the system using iss-vm
 
@@ -47,22 +47,32 @@ Our team had an amazing time working on this project, and hope to share our insi
 
 > open terminal in iss-vm
 
-> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
+> $ git clone https://github.com/musicrokr/IRS-RS-2019-03-09-IS01PT-GRP-TheSundayLunatics-DeckSorcery.git
 
-> $ source activate iss-env-py2
+> $ cd folder_location/SystemCode/deck-sorcery-master
 
-> (iss-env-py2) $ cd Workshop-Project-Submission-Template/SystemCode/clips
+> $ py -m venv env
 
-> (iss-env-py2) $ python app.py
+> $ env\Scripts\activate
 
-> **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
+> $ pip install flask
+
+> $ set FLASK_APP=main.py
+
+> $ pip install sklearn
+
+> $ pip install deap
+
+> $ flask run
+
+> **Go to URL listed in Command Prompt using web browser** http://127.0.0.1:5000
 
 ### [ 2 ] To run the system in other/local machine:
 ### Install additional necessary libraries. This application works in Python 3 only.
 
-> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
+> $ git clone https://github.com/musicrokr/IRS-RS-2019-03-09-IS01PT-GRP-TheSundayLunatics-DeckSorcery.git
 
-> $ cd folder_location/
+> $ cd folder_location/SystemCode/deck-sorcery-master
 
 > $ py -m venv env
 
@@ -84,7 +94,7 @@ Our team had an amazing time working on this project, and hope to share our insi
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/ProjectReport/Project%20Report%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/musicrokr/IRS-RS-2019-03-09-IS01PT-GRP-TheSundayLunatics-DeckSorcery/blob/master/ProjectReport/Deck%20Sorcery%20Project%20Report.pdf>
 
 ---
 ## SECTION 7 : MISCELLANEOUS
