@@ -36,13 +36,13 @@ for hc in heroClasses:
         writeData.append(d[1:] + [mapping[wrGroup]])
         writeDataPretty.append([getCardName(int(c)) for c in d[1:len(d)-1]] + [d[len(d)-1]] + [mapping[wrGroup]])
 
-    with open("data/{0}-data.csv".format(hc), "w") as outfile:
-        for wd in writeData:
-            outfile.write(",".join(wd)+"\n")
+    #with open("data/{0}-data.csv".format(hc), "w") as outfile:
+    #    for wd in writeData:
+    #        outfile.write(",".join(wd)+"\n")
 
-    with open("data/{0}-data-withname.csv".format(hc), "w") as outfile:
-        for wd in writeDataPretty:
-            outfile.write(",".join(wd)+"\n")
+    #with open("data/{0}-data-withname.csv".format(hc), "w") as outfile:
+    #    for wd in writeDataPretty:
+    #        outfile.write(",".join(wd)+"\n")
 
     association_rules = apriori(actualDecks, min_support=0.25, min_confidence=0.1, min_lift=1, min_length=2)
     association_results = list(association_rules)
@@ -62,9 +62,9 @@ for hc in heroClasses:
     with open("data/{0}-rule.csv".format(hc), "w") as outfile:
         for wd in classRules:
             outfile.write(",".join(wd) + "\n")
-    with open("data/{0}-rule-withname.csv".format(hc), "w") as outfile:
-        for wd in classRulesPretty:
-            outfile.write(",".join(wd) + "\n")
+    #with open("data/{0}-rule-withname.csv".format(hc), "w") as outfile:
+    #    for wd in classRulesPretty:
+    #        outfile.write(",".join(wd) + "\n")
     print("completed class: {0}".format(hc))
     print("{0} rules found".format(len(association_results)))
     print("interested rules: {0}".format(len(classRules)))
