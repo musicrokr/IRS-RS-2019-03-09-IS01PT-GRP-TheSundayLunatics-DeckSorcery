@@ -1,0 +1,8 @@
+{
+    "deck-stats.json": "https://hsreplay.net/analytics/query/list_decks_by_win_rate/?GameType=RANKED_STANDARD&RankRange=ALL&Region=ALL&TimeRange=LAST_30_DAYS",
+    "archetype.json": "https://hsreplay.net/api/v1/archetypes/",
+    "card-stats.json": "https://hsreplay.net/analytics/query/card_played_popularity_report/?GameType=RANKED_STANDARD&TimeRange=LAST_14_DAYS&RankRange=ALL",
+    "card-stats2.json": "https://hsreplay.net/analytics/query/card_included_popularity_report/?GameType=RANKED_STANDARD&TimeRange=LAST_14_DAYS&RankRange=ALL",
+    "cards-in-use.json": "https://api.hearthstonejson.com/v1/29933/enUS/cards.collectible.json",
+    "cards-all.json": "https://api.hearthstonejson.com/v1/29933/enUS/cards.json"
+}
