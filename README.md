@@ -8,7 +8,16 @@
 ---
 ## SECTION 2 : EXECUTIVE SUMMARY
 
-ISSAC is the implementation of an Automated Chatbot to provide information about the Institute of System Science (ISS) of the National University of Singapore. The key challenge was to identify key information contained with the website and extracting the relevant information from the website. Information Extraction (IE) techniques were applied to the website to summarize natural language text into a structured set of facts. We developed a framework for plugging in and executing IE methods over 150 pages in the ISS website. We also integrated a generic web crawler in the system.
+Computer gaming is a billion dollar industry, characterized by video and mobile games which provide endless hours of entertainment to gamers. Nonlinear gamplays presents players with challenges that can be completed in a number of different sequences and could result in a variety of outcomes. Increasingly, game developers are leveraging on  machine learning methods, such as supervised learning like support vector machines or neural networks to build the models of player experience to enhance gameplay. 
+
+Hearthstone, a online collectible card game (CCG) is a turn-based 1-vs-1 strategy game  set in the Warcraft universe. In CCGs every  player is asked to construct a specific deck of 30 cards before the actual match. With 9 different hero classes and over 2,000 possible cards to choose from, this is no doubt a daunting task. Each card include specific rules that affect the interaction between players, promoting a varied and dynamic game play. Players need to deal with hidden information and randomness, with the combination of states, rules and cards that may result in complex or unpredicted reactions, such as combos, combination of card. Hearthstone is a game where actions may have non-deterministic results, and the challenge for each user to maximize the possibility of winning using their constructed deck.
+
+TSL has developed Deck Sorcery, a web based platform, which focuses on the automated deck construction and deck win rate optimization using information from historical dataset of decks.  The actual gameplay mechanisms are not covered in this project but they can be considered in future enhancement of the intelligent system. Deck Sorcery is based on a Hybrid Reasoning System: Co-operating Experts architecture, considering the complex nature of deck construction and requirements for various techniques. Deck Sorcery leverages on a combination of machine reasoning techniques such as deductive and inductive reasoning, as well as planning & optimization in Synthetic Problem Solving.
+
+The lack of any universal benchmarking methods for win rate prediction made assess the strength of the deck other than by human observation. Also, a multitude of factors such as the player’s intrinsic ability or the number of actions in the game are not considered in our analysis. 
+
+The technologies used in our POC solution are a combination of Flask, Python and external Python libraries such as Scikit Learn, DEAP and Apyori.
+
 
 ---
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
